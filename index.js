@@ -3,8 +3,8 @@ import dotenv from "dotenv";
 import cors from "cors";
 import mongoose from "mongoose";
 
-import userRoutes from "../routes/userRoutes.js";
-import placeRoutes from "../routes/placeRoutes.js";
+import userRoutes from "./routes/userRoutes.js";
+import placeRoutes from "./routes/placeRoutes.js";
 
 dotenv.config();
 
