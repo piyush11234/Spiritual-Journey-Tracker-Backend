@@ -1,10 +1,11 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "api/index.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon api/index.js"
+    "dev": "nodemon index.js",
+    "vercel-start":"nodemon index.js"
   },
   "keywords": [],
   "author": "",

@@ -49,7 +49,12 @@ const connectDB = async () => {
   }
 };
 
-connectDB();
+app.use((req,res,next)=>{
+  if(!isConnected){
+    connectDB()
+  }
+  next();
+})
 
 /* ===========================
    ROUTES
@@ -62,8 +67,5 @@ app.get("/", (req, res) => {
   res.status(200).send("✅ Backend is live and connected to MongoDB");
 });
 
-/* ===========================
-   EXPORT FOR VERCEL
-=========================== */
 
 export default app;
