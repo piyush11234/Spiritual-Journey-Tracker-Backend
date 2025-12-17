@@ -8,7 +8,7 @@ const VisitSchema = new mongoose.Schema({
   place: { type: String, required: true },
   date: { type: Date, required: true },
 
-  mantras:{type:String,enum: ["Pratham Nam", "Satnam","Sarname"]},
+  mantras:{type:String,enum: ["Pratham Nam", "Satnam","Saarnam"]},
 
   purpose: { type: String, required: true },  // removed enum for custom
   customPurpose: { type: String }, // used when purpose = Other

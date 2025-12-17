@@ -30,7 +30,7 @@ const userSchema = new mongoose.Schema(
 
         },
 
-        mantras:{type:String,enum: ["Pratham Nam", "Satnam","Sarname"],},
+        mantras:{type:String,enum: ["Pratham Nam", "Satnam","Saarnam"],},
 
         family: [{ type: mongoose.Schema.Types.ObjectId, ref: "FamilyMember" }],
         
