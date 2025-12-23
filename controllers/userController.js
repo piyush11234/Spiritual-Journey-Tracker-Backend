@@ -39,7 +39,7 @@ export const registerUser = async (req, res) => {
             phone,
             address,
             mantras,
-            isVerified: false
+            isVerified: true
         });
 
         const token = jwt.sign(
